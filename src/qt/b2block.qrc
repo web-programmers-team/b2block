@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file alias="hu">locale/b2block_hu.qm</file>
+    </qresource>
+</RCC>
