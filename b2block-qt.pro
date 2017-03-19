@@ -3,11 +3,25 @@ TARGET = b2block
 INCLUDEPATH += src src/qt
 VERSION = 1.0.0
 
-QT += core gui
+QT += core gui widgets
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 lessThan(QT_MAJOR_VERSION, 5): CONFIG += static
 
-SOURCES +=  src/qt/b2block.cpp
+SOURCES +=   src/qt/b2block.cpp \
+	     src/qt/b2blockgui.cpp \
+	     src/qt/aboutdialog.cpp \
+	     src/qt/overviewpage.cpp
+
+HEADERS +=   src/qt/b2blockgui.h \
+	     src/qt/aboutdialog.h \
+	     src/qt/overviewpage.h
+
+FORMS +=     src/qt/forms/aboutdialog.ui \
+	     src/qt/forms/overviewpage.ui
+
+RESOURCES += src/qt/b2block.qrc
+
+
 
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH

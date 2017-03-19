@@ -1,12 +1,13 @@
 #include <QApplication>
 #include <QPushButton>
+
+#include "b2blockgui.h"
  
 int main(int argc, char **argv)
 {
- QApplication app (argc, argv);
- 
- QPushButton button ("Hello b2block !");
- button.show();
- 
- return app.exec();
+  QApplication app (argc, argv);
+  
+  B2BlockGUI b2blockGUI;
+  b2blockGUI.show();
+  return app.exec();
 }

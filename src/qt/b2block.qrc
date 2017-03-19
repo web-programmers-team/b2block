@@ -1,4 +1,13 @@
 <RCC>
+    <qresource prefix="/icons">
+        <file alias="dashboard">resources/icons/dashboard.png</file>
+        <file alias="about">resources/icons/about.png</file>
+        <file alias="exit">resources/icons/exit.png</file>
+        <file alias="b2block">resources/icons/b2block.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="about">resources/images/about.png</file>
+    </qresource>
     <qresource prefix="/translations">
         <file alias="hu">locale/b2block_hu.qm</file>
     </qresource>
